@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+  font-family: 'Outfit', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #f0fdfa 0%, #fff7ed 100%);
+  color: #333333;
+}
+
+.app-container {
+  min-height: 100vh;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 576px) {
+  .app-container {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .app-container {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .app-container {
+    padding-left: 7rem;
+    padding-right: 7rem;
+  }
+}
+
+/* Hover Scale utility */
+.hover-scale {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-scale:hover {
+  transform: scale(1.03);
+}
+
+.hover-scale-sm {
+  transition: transform 0.2s ease;
+}
+
+.hover-scale-sm:hover {
+  transform: scale(1.05);
+}
+
+/* Custom rounded pill buttons */
+.btn-dark-pill {
+  background-color: #18181b;
+  color: #ffffff;
+  border-radius: 50rem;
+  border: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-dark-pill:hover {
+  background-color: #27272a;
+  color: #ffffff;
+  transform: scale(1.03);
+}
+
+.btn-credit-pill {
+  background-color: #e0f2fe;
+  color: #374151;
+  border-radius: 50rem;
+  border: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-credit-pill:hover {
+  background-color: #bae6fd;
+}
+
+/* Modal styling */
+.login-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1050;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(4px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-modal-box {
+  background: #ffffff;
+  border-radius: 1rem;
+  padding: 2.5rem;
+  position: relative;
+  width: 90%;
+  max-width: 420px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Input icons wrapper */
+.input-with-icon {
+  display: flex;
+  align-items: center;
+  border: 1px solid #e5e7eb;
+  border-radius: 50rem;
+  padding: 0.5rem 1.25rem;
+  gap: 0.6rem;
+  background-color: #ffffff;
+}
+
+.input-with-icon input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 0.875rem;
+  background: transparent;
+}
+
+/* User dropdown on hover */
+.profile-dropdown-container {
+  position: relative;
+}
+
+.profile-dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  padding-top: 0.5rem;
+  z-index: 100;
+}
+
+.profile-dropdown-container:hover .profile-dropdown-menu {
+  display: block;
+}
+
+/* Search bar on Result page */
+.prompt-search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #525252;
+  border-radius: 50rem;
+  padding: 0.25rem;
+  width: 100%;
+  max-width: 580px;
+}
+
+.prompt-search-bar input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  padding-left: 1.5rem;
+  font-size: 0.9rem;
+  flex: 1;
+}
+
+.prompt-search-bar input::placeholder {
+  color: #d4d4d4;
+  font-weight: 300;
+}
+
+.grey-placeholder::placeholder {
+  color: #9ca3af;
+  font-weight: 300;
+}
